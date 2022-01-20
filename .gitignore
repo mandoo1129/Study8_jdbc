@@ -45,3 +45,5 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,java,eclipse
+bin/com/iu/s1/util/DBConnector.class
+src/com/iu/s1/util/DBConnector.java

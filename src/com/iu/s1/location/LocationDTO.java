@@ -1,13 +1,15 @@
 package com.iu.s1.location;
 
 public class LocationDTO {
-
+	
 	private Integer location_id;
 	private String street_address;
 	private String postal_code;
 	private String city;
-	private String State_province;
+	private String state_province;
 	private String country_id;
+	
+	
 	
 	public Integer getLocation_id() {
 		return location_id;
@@ -34,10 +36,10 @@ public class LocationDTO {
 		this.city = city;
 	}
 	public String getState_province() {
-		return State_province;
+		return state_province;
 	}
 	public void setState_province(String state_province) {
-		State_province = state_province;
+		this.state_province = state_province;
 	}
 	public String getCountry_id() {
 		return country_id;
@@ -46,4 +48,7 @@ public class LocationDTO {
 		this.country_id = country_id;
 	}
 	
+	
+	
+
 }
