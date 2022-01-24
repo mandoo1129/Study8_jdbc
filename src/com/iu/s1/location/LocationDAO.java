@@ -16,6 +16,26 @@ public class LocationDAO {
 		dbConnector = new DBConnector();
 	}
 	
+	public void getDEP_EMPList() throws Exception {
+		
+		Connection con = dbConnector.getConnect();
+		
+		String sql = "SELECT D.*, E.*"
+				+ "FROM DEPARTMENTS D"
+			    + "INNER JOIN"
+			    + "EMPLOYEES E"
+			    + "ON (D.DEPARTMENT_ID = E.DEPARTMENT_ID)";
+		
+		PreparedStatement st = con.prepareStatement(sql);
+		
+		ResultSet rs = st.executeQuery();
+		
+		while (rs.next()) {
+			
+		}
+		
+		
+	}
 	public List<LocationDTO> getList() throws Exception {
 		
 		ArrayList<LocationDTO> ar = new ArrayList<>();
